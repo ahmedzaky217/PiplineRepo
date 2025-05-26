@@ -18,3 +18,9 @@ steps:
     orchestratorConnection: 'UipathConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Verbose'
+- task: UiPathDeploy@5
+  inputs:
+    orchestratorConnection: 'UipathConnection'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'zaki'
+    traceLevel: 'Information'
