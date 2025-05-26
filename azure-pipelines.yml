@@ -17,3 +17,4 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'UipathConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    traceLevel: 'Verbose'
